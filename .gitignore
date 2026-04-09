@@ -1,0 +1,32 @@
+# Thư viện (Nặng nhất, không bao giờ đưa lên)
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Các file log lỗi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Môi trường và Bảo mật (Chứa chìa khóa API nếu có)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# File hệ thống của Windows/Mac
+.DS_Store
+Thumbs.db
+
+# Cấu hình riêng của trình soạn thảo
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
