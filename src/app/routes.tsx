@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import Layout from "./components/Layout";
 import { HomeRedirect } from "./components/HomeRedirect";
 import Login from "./pages/Login";
@@ -9,7 +9,7 @@ import Collections from "./pages/Collections";
 import Onboarding from "./pages/Onboarding";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     Component: Layout,
@@ -56,4 +56,7 @@ export const router = createBrowserRouter([
       },
     ],
   },
-]);
+],
+  {
+    basename: "/",
+  });
